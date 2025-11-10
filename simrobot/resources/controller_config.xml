@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ControllerConfiguration>
+    <Controller name="WalkingController" 
+                file="controllers/WalkingController.cpp"
+                type="C++"/>
+    
+    <Robot name="RoboCupRobot">
+        <Motor name="leg_motor_0" joint="left_hip_joint"/>
+        <Motor name="leg_motor_1" joint="left_knee_joint"/>
+        <Motor name="leg_motor_2" joint="right_hip_joint"/>
+        <Motor name="leg_motor_3" joint="right_knee_joint"/>
+        
+        <Sensor name="joint_sensor_0" type="JointAngle" joint="left_hip_joint"/>
+        <Sensor name="joint_sensor_1" type="JointAngle" joint="left_knee_joint"/>
+        <Sensor name="joint_sensor_2" type="JointAngle" joint="right_hip_joint"/>
+        <Sensor name="joint_sensor_3" type="JointAngle" joint="right_knee_joint"/>
+    </Robot>
+</ControllerConfiguration>

@@ -1,0 +1,23 @@
+Scene {
+    name "RoboCup Walking Test"
+    
+    # Include a humanoid robot model
+    Include {
+        file "robots/humanoid.ros2"
+        name "RoboCupRobot"
+    }
+    
+    # Ground plane
+    Ground {
+        size 10 10
+        appearance "grass"
+    }
+    
+    # Starting position
+    Transform {
+        translation 0 0 0.3
+        children [
+            USE RoboCupRobot
+        ]
+    }
+}

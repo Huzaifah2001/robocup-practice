@@ -15,3 +15,13 @@ public:
 };
 
 #endif
+
+// SimRobot-specific extensions
+struct LegTrajectory {
+    double position;
+    double velocity;
+    double force;
+};
+
+LegTrajectory calculateLegTrajectoryDetailed(int legId, double phase);
+void setSimRobotParameters(double timeStep, double gravity);
